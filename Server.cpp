@@ -52,6 +52,7 @@ void Server::doTask()
     is_program_exit = 0;
     RegisterMember registerMember;
     Login login;
+    Logout logout;
     while (! is_program_exit)
     {
         fscanf(_fin, "%d %d \n", &menu_level_1, &menu_level_2);
@@ -82,6 +83,7 @@ void Server::doTask()
                     break;
                 case 2:
                     cout << "2.2. 로그아웃" << endl;
+                    logout.run();
                     break;
                 default:
                     is_program_exit = 1;

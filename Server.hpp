@@ -1,6 +1,7 @@
 #pragma once
 #include "RegisterMember.hpp"
 #include "Login.hpp"
+#include "Logout.hpp"
 
 class Server
 {

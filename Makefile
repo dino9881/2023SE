@@ -18,6 +18,8 @@ SRCS = main.cpp \
 		RegisterMemberUI.cpp \
 		LoginUI.cpp \
 		Login.cpp \
+		LogoutUI.cpp \
+		Logout.cpp \
 
 all: ${NAME}
 
