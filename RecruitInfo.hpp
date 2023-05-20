@@ -11,8 +11,8 @@ private:
     unsigned int    _numOfApplicants;
 
 public:
-    void    getRecruitInfoDetail();
-    void    setApplyNum();
+    RecruitInfoDetail   getRecruitInfoDetail();
+    void                setApplyNum();
     RecruitInfo(string companyName, string task, string deadline, unsigned int numOfPersonnel);
     ~RecruitInfo();
 };

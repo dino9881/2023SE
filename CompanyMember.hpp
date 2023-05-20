@@ -1,11 +1,14 @@
 #pragma once
 #include "Member.hpp"
+#include "RecruitInfo.hpp"
 
 class CompanyMember : public Member
 {
 private:
     string  _companyName;
     string  _businessNumber;
+    RecruitInfo* _ownedRecuitInfo;
+
     
 public:
     unsigned int    totalApplicantsNum();

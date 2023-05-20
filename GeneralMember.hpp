@@ -1,11 +1,13 @@
 #pragma once
 #include "Member.hpp"
+#include "ApplyInfo.hpp"
 
 class GeneralMember : public Member
 {
 private:
     string _name;
     string _residentNumber;
+    ApplyInfo*  _ownedApplyInfo[MAX_APPLY_NUM];
     
 public:
     unsigned int    totalApplyNum();

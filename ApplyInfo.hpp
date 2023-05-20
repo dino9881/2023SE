@@ -9,6 +9,7 @@ private:
     string          _deadline;
     unsigned int    _numOfPersonnel;
     
+    
 public:
     void getApplyInfoDetail();
     void setApplyNum();

@@ -5,11 +5,16 @@ NAME = a
 OBJS = ${SRCS:.cpp=.o}
 RM = rm -rf
 SRCS = main.cpp \
+		Server.cpp \
 		Member.cpp \
 		ApplyInfo.cpp \
 		CompanyMember.cpp \
 		GeneralMember.cpp \
 		RecruitInfo.cpp \
+		Server.cpp \
+		BasicUI.cpp \
+		RegisterMember.cpp \
+		RegisterMemberUI.cpp \
 
 all: ${NAME}
 

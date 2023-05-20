@@ -6,6 +6,10 @@
         "string_view": "cpp",
         "typeinfo": "cpp",
         "vector": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "iostream": "cpp",
+        "locale": "cpp",
+        "fstream": "cpp",
+        "__locale": "cpp"
     }
 }
