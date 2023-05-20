@@ -15,7 +15,7 @@ public:
     void            addNewRecruitInfo();
     void            listRecruitInfo();
     virtual void	checkInfo();
-    CompanyMember(string id, string pw, string companyName, string businessNumber);
+    CompanyMember(string name, string residentNumber,string id, string pw);
     ~CompanyMember();
 };
 

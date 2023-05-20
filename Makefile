@@ -13,8 +13,11 @@ SRCS = main.cpp \
 		RecruitInfo.cpp \
 		Server.cpp \
 		BasicUI.cpp \
+		BasicController.cpp \
 		RegisterMember.cpp \
 		RegisterMemberUI.cpp \
+		LoginUI.cpp \
+		Login.cpp \
 
 all: ${NAME}
 

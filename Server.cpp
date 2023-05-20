@@ -4,26 +4,39 @@ Server::Server()
 {
     _fin = fopen(INPUT_FILE_NAME, "r+");
     _fout = fopen(OUTPUT_FILE_NAME, "w+");
+    _curMember = NULL;
 }
 Server::~Server(){}
 
-Server* Server::instance = NULL;
+Server* Server::_instance = NULL;
 
 Server* Server::getInstance()
 {
-	if (!instance)
-		instance = new Server();
-	return instance;
+	if (!_instance)
+		_instance = new Server();
+	return (_instance);
+}
+
+Member* Server::getCurMember()
+{
+    return _curMember;
+}
+
+void Server::setCurMember(Member* member)
+{
+    _curMember = member;
 }
 
 FILE* Server::getFin()
 {
     return this->_fin;
 }
+
 FILE* Server::getFout()
 {
     return this->_fout;
 }
+
 vector<Member*> &Server::getMemberList()
 {
     return this->_memberList;
@@ -38,6 +51,7 @@ void Server::doTask()
     menu_level_2 = 0; 
     is_program_exit = 0;
     RegisterMember registerMember;
+    Login login;
     while (! is_program_exit)
     {
         fscanf(_fin, "%d %d \n", &menu_level_1, &menu_level_2);
@@ -64,6 +78,7 @@ void Server::doTask()
             {
                 case 1:
                     cout << "2.1. 로그인" << endl;
+                    login.run();
                     break;
                 case 2:
                     cout << "2.2. 로그아웃" << endl;

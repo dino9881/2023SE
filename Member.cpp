@@ -13,4 +13,12 @@ int		Member::changeAccessState()
 
      return 0;
 }
+string Member::getId()
+{
+    return (_id);
+}
+string Member::getPw()
+{
+    return (_pw);
+}
 Member::~Member(){}

@@ -15,7 +15,7 @@ public:
     void            listApplyInfo();
     void            createNewApplyInfo();
     virtual void	checkInfo();
-    GeneralMember(string id, string pw, string name, string residentNumber);
+    GeneralMember( string name, string residentNumber,string id, string pw);
     ~GeneralMember();
 };
 

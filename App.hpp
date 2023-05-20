@@ -34,3 +34,9 @@ typedef struct _RegisterForm
     string id;
     string pw;
 } RegisterForm;
+
+typedef struct _LoginForm
+{
+    string id;
+    string pw;
+} LoginForm;

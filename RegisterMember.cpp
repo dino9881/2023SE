@@ -13,8 +13,7 @@ Member* RegisterMember::createNewMember(RegisterForm registerForm)
     return (member);
 }
 
-RegisterMember::RegisterMember() : _registerMemberUI()
-{}
+RegisterMember::RegisterMember(){}
 void RegisterMember::run()
 {
     Server* server = Server::getInstance();

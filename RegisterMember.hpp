@@ -2,8 +2,9 @@
 #include "App.hpp"
 #include "Member.hpp"
 #include "RegisterMemberUI.hpp"
+#include "BasicController.hpp"
 
-class RegisterMember
+class RegisterMember : public BasicController
 {
 private:
     RegisterMemberUI _registerMemberUI;
