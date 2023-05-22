@@ -5,10 +5,10 @@
 class Logout : public BasicController
 {
 private:
-    LogoutUI _logoutUI;
+    LogoutUI    _logoutUI;
 public:
     Logout();
     ~Logout();
-    void run();
+    void    run();
 };
 

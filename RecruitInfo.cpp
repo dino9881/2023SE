@@ -7,7 +7,7 @@ RecruitInfo::RecruitInfo(string companyName, string task, string deadline, unsig
 
 RecruitInfoDetail    RecruitInfo::getRecruitInfoDetail()
 {
-    RecruitInfoDetail detail;
+    RecruitInfoDetail   detail;
     
     detail.companyName = this->_companyName;
     detail.task = this->_task;
@@ -18,5 +18,4 @@ RecruitInfoDetail    RecruitInfo::getRecruitInfoDetail()
 
 void    RecruitInfo::setApplyNum()
 {
-
 }

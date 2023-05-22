@@ -6,6 +6,7 @@ Server::Server()
     _fout = fopen(OUTPUT_FILE_NAME, "w+");
     _curMember = NULL;
 }
+
 Server::~Server(){}
 
 Server* Server::_instance = NULL;
@@ -44,15 +45,15 @@ vector<Member*> &Server::getMemberList()
 
 void Server::doTask()
 {
+    RegisterMember  registerMember;
+    Login           login;
+    Logout          logout;
     int menu_level_1, menu_level_2;
     int is_program_exit;
 
     menu_level_1 = 0;
     menu_level_2 = 0; 
     is_program_exit = 0;
-    RegisterMember registerMember;
-    Login login;
-    Logout logout;
     while (! is_program_exit)
     {
         fscanf(_fin, "%d %d \n", &menu_level_1, &menu_level_2);

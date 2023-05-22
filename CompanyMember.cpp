@@ -11,14 +11,17 @@ unsigned int    CompanyMember::totalApplicantsNum()
 {
     return (0);
 }
+
 void            CompanyMember::addNewRecruitInfo()
 {
 
 }
+
 void            CompanyMember::listRecruitInfo()
 {
 
 }
+
 void	CompanyMember::checkInfo()
 {
 

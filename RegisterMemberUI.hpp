@@ -5,7 +5,7 @@ class RegisterMemberUI : public BasicUI
 {
 private:
 public: 
-    void    startInterface();
+    void            startInterface();
     RegisterForm    enterRegisterInfo();
     RegisterMemberUI();
     ~RegisterMemberUI();

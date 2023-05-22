@@ -11,18 +11,22 @@ unsigned int    GeneralMember::totalApplyNum()
 {
     return 0;
 }
+
 void            GeneralMember::cancelApplyInfo()
 {
 
 }
+
 void            GeneralMember::listApplyInfo()
 {
 
 }
+
 void            GeneralMember::createNewApplyInfo()
 {
 
 }
+
 void	GeneralMember::checkInfo()
 {
     

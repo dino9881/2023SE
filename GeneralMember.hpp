@@ -5,8 +5,8 @@
 class GeneralMember : public Member
 {
 private:
-    string _name;
-    string _residentNumber;
+    string      _name;
+    string      _residentNumber;
     ApplyInfo*  _ownedApplyInfo[MAX_APPLY_NUM];
     
 public:
@@ -15,7 +15,7 @@ public:
     void            listApplyInfo();
     void            createNewApplyInfo();
     virtual void	checkInfo();
-    GeneralMember( string name, string residentNumber,string id, string pw);
+    GeneralMember(string name, string residentNumber, string id, string pw);
     ~GeneralMember();
 };
 

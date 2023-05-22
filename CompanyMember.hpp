@@ -5,9 +5,9 @@
 class CompanyMember : public Member
 {
 private:
-    string  _companyName;
-    string  _businessNumber;
-    RecruitInfo* _ownedRecuitInfo;
+    string          _companyName;
+    string          _businessNumber;
+    RecruitInfo*    _ownedRecuitInfo;
 
     
 public:

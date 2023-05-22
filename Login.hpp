@@ -9,7 +9,7 @@ private:
 public:
     Login();
     ~Login();
-    void run();
+    void    run();
     Member* checkValidation(LoginForm loginForm);
 };
 

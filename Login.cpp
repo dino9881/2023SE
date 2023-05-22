@@ -2,12 +2,15 @@
 #include "Server.hpp"
 
 Login::Login(){}
+
 Login::~Login(){}
+
 Member* Login::checkValidation(LoginForm loginForm)
 {
-    Server* server = Server::getInstance();
-    Member* member = NULL;
+    Server*         server = Server::getInstance();
+    Member*         member = NULL;
     vector<Member*> memberList = server->getMemberList();
+
     for (int i = 0; i < memberList.size(); i++)
     {
         cout << loginForm.id << " " << memberList[i]->getId() << endl;
@@ -20,10 +23,12 @@ Member* Login::checkValidation(LoginForm loginForm)
     server->setCurMember(member);
     return (member);
 }
+
 void Login::run()
 {
     Server* server = Server::getInstance();
     Member* member = NULL;
+    
     _loginUI.startInterface();
     member = checkValidation(_loginUI.requestLogIn());
     if (!member)

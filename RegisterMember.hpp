@@ -7,7 +7,7 @@
 class RegisterMember : public BasicController
 {
 private:
-    RegisterMemberUI _registerMemberUI;
+    RegisterMemberUI    _registerMemberUI;
 public:
     Member* createNewMember(RegisterForm registerForm);
     RegisterMember();

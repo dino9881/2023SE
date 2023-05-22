@@ -10,8 +10,8 @@ void    LoginUI::startInterface()
 }
 LoginForm   LoginUI::requestLogIn()
 {
-    char id[MAX_STRING];
-    char pw[MAX_STRING];
+    char    id[MAX_STRING];
+    char    pw[MAX_STRING];
     
     fscanf(_fin, "%s %s\n", id, pw);
     LoginForm loginForm{string(id), string(pw)};

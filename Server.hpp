@@ -15,10 +15,10 @@ private:
     ~Server();
 public:
     static  Server* getInstance();
-    FILE* getFin();
-    FILE* getFout();
-    Member* getCurMember();
-    void setCurMember(Member* member);
+    FILE*           getFin();
+    FILE*           getFout();
+    Member*         getCurMember();
+    void            setCurMember(Member* member);
     vector<Member*> &getMemberList();
-    void    doTask();
+    void            doTask();
 };
