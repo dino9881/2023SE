@@ -5,6 +5,7 @@ Login::Login(){}
 
 Login::~Login(){}
 
+// 로그인을 전달 받은 loginForm 으로 시도한다. Server class에 있는 memberList를 순회하며 id 와 pw 가 동일한 member 가 있다면 해당 member 의 포인터를 반환한다. 
 Member* Login::checkValidation(LoginForm loginForm)
 {
     Server*         server = Server::getInstance();
@@ -24,6 +25,7 @@ Member* Login::checkValidation(LoginForm loginForm)
     return (member);
 }
 
+// chekValidation으로 입력받은 member 를 찾고, 해당 member를 서버의 curMember로 넣어준다.
 void Login::run()
 {
     Server* server = Server::getInstance();

@@ -5,9 +5,9 @@ void    RegisterMemberUI::startInterface()
     fprintf(_fout, "1.1. 회원가입\n");
 }
 
+// 사용자의 입력을 받고 registerForm 을 만들어 controller 에 전달한다. 
 RegisterForm    RegisterMemberUI::enterRegisterInfo()
 {
-    // 입력을 받는 부분
     int     type = 0;
     char    name[MAX_STRING];
     char    number[MAX_STRING];

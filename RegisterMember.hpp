@@ -4,6 +4,7 @@
 #include "RegisterMemberUI.hpp"
 #include "BasicController.hpp"
 
+// 회원가입 controller
 class RegisterMember : public BasicController
 {
 private:

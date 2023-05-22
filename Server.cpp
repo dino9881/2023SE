@@ -1,5 +1,7 @@
 #include "Server.hpp"
 
+// 싱글톤 패턴으로 구현하며 서버 객체 생성시 현제 로그인 되어있는 member = NULL , 과제 명세에 적혀있는 파일을 열고 파일 포인터에 저장해준다.
+// Server 의 생성자 를 private 선언하여 다른곳에서 생성을 하지 못하게 한후 getInstance() 를 이용해서 객체를 참조할 수 있게 한다. 
 Server::Server()
 {
     _fin = fopen(INPUT_FILE_NAME, "r+");

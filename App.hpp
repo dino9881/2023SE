@@ -1,5 +1,6 @@
 #pragma once
 
+// 헤더 정리
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -7,6 +8,7 @@
 
 using namespace std;
 
+// define 정리
 #define MAX_STRING 32
 #define MAX_APPLY_NUM 100
 #define COMPANY_MEMBER_TYPE 1
@@ -16,6 +18,7 @@ using namespace std;
 #define LOGOUT  1
 #define LOGIN   2
 
+// struct 정리
 typedef struct _RecruitInfoDetail
 {
     string companyName;
