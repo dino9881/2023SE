@@ -11,7 +11,7 @@ private:
     
 public:
     unsigned int        totalApplyNum();
-    void                cancelApplyInfo();
+    ApplyInfoDetail     cancelApplyInfo(string businessNumber);
     vector<ApplyInfo*>  listApplyInfo();
     RegisterForm        getMemberDetail();
     void                createNewApplyInfo(RecruitInfoDetail recruitInfoDetail);

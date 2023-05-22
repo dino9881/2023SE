@@ -60,6 +60,7 @@ void Server::doTask()
     GetRecruitInfoList getRecruitInfoList;
     ApplyRecruitInfo applyRecruitInfo;
     ShowApplyInfoList showApplyInfoList;
+    CancelApply cancelApply;
     int menu_level_1, menu_level_2;
     int is_program_exit;
 
@@ -134,6 +135,7 @@ void Server::doTask()
                     break;
                 case 4:
                     // cout <<"4.4. 지원 취소" << endl;
+                    cancelApply.run();
                     break;
                 default:
                     is_program_exit = 1;

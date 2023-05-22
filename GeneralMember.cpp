@@ -24,9 +24,19 @@ unsigned int    GeneralMember::totalApplyNum()
     return 0;
 }
 
-void            GeneralMember::cancelApplyInfo()
+ApplyInfoDetail            GeneralMember::cancelApplyInfo(string businessNumber)
 {
-
+    ApplyInfoDetail applyInfoDetail;
+    for (int i = 0 ; i < _ownedApplyInfo.size(); i++)
+    {
+        if (_ownedApplyInfo[i]->getBusinessNumber() == businessNumber)
+        {
+            applyInfoDetail = _ownedApplyInfo[i]->getApplyInfoDetail();
+            _ownedApplyInfo.erase(_ownedApplyInfo.begin() + i);
+            break;
+        }
+    }
+    return (applyInfoDetail);
 }
 
 vector<ApplyInfo*>            GeneralMember::listApplyInfo()

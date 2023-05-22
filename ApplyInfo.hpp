@@ -13,6 +13,7 @@ private:
     
 public:
     ApplyInfoDetail    getApplyInfoDetail();
+    string  getBusinessNumber();
     void    setApplyNum();
     ApplyInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~ApplyInfo();

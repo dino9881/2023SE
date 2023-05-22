@@ -28,7 +28,9 @@ SRCS = main.cpp \
 		ApplyRecruitInfoUI.cpp \
 		ShowApplyInfoList.cpp \
 		ShowApplyInfoListUI.cpp \
-		
+		CancelApplyUI.cpp \
+		CancelApply.cpp \
+
 all: ${NAME}
 
 .c.o:
