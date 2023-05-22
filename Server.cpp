@@ -56,6 +56,8 @@ void Server::doTask()
     RegisterMember  registerMember;
     Login           login;
     Logout          logout;
+    RegisterRecruitInfo registerRecruitInfo;
+    GetRecruitInfoList getRecruitInfoList;
     int menu_level_1, menu_level_2;
     int is_program_exit;
 
@@ -72,11 +74,10 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    cout << "1.1. 회원가입" << endl;
                     registerMember.run();
                     break;
                 case 2:
-                    cout << "1.2. 회원탈퇴" << endl;
+                    // cout << "1.2. 회원탈퇴" << endl;
                     break;
                 default:
                     is_program_exit = 1;
@@ -87,11 +88,11 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    cout << "2.1. 로그인" << endl;
+                    // cout << "2.1. 로그인" << endl;
                     login.run();
                     break;
                 case 2:
-                    cout << "2.2. 로그아웃" << endl;
+                    // cout << "2.2. 로그아웃" << endl;
                     logout.run();
                     break;
                 default:
@@ -103,10 +104,12 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    cout <<"3.1. 채용 정보 등록" << endl;
+                    // cout <<"3.1. 채용 정보 등록" << endl;
+                    registerRecruitInfo.run();
                     break;
                 case 2:
-                    cout <<"3.2. 등록된 채용 정보 조회" << endl;
+                    // cout <<"3.2. 등록된 채용 정보 조회" << endl;
+                    getRecruitInfoList.run();
                     break;
                 default:
                     is_program_exit = 1;
@@ -117,16 +120,16 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    cout <<"4.1. 채용 정보 검색" << endl;
+                    // cout <<"4.1. 채용 정보 검색" << endl;
                     break;
                 case 2:
-                    cout <<"4.2. 채용 지원" << endl;
+                    // cout <<"4.2. 채용 지원" << endl;
                     break;
                 case 3:
-                    cout <<"4.3. 지원 정보 조회" << endl;
+                    // cout <<"4.3. 지원 정보 조회" << endl;
                     break;
                 case 4:
-                    cout <<"4.4. 지원 취소" << endl;
+                    // cout <<"4.4. 지원 취소" << endl;
                     break;
                 default:
                     is_program_exit = 1;
@@ -137,7 +140,7 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    cout <<"5.1. 지원 정보 통계" << endl;
+                    // cout <<"5.1. 지원 정보 통계" << endl;
                     break;
                 default:
                     is_program_exit = 1;
@@ -148,7 +151,7 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    cout <<"6.1. 종료" << endl;
+                    // cout <<"6.1. 종료" << endl;
                     is_program_exit = 1;
                     break;
                 default:

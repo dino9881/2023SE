@@ -14,7 +14,6 @@ Member* Login::checkValidation(LoginForm loginForm)
 
     for (int i = 0; i < memberList.size(); i++)
     {
-        cout << loginForm.id << " " << memberList[i]->getId() << endl;
         if (loginForm.id == memberList[i]->getId() && loginForm.pw == memberList[i]->getPw())
         {
             member = memberList[i];
@@ -38,6 +37,6 @@ void Login::run()
         cout << "로그인 실패 "<< endl;
         return;
     }
-    cout << "로그인 성공 id = " << member->getId() << endl;
+    cout << "로그인 성공 id = " << member->getId() << " pw = " << member->getPw() << endl;
     server->setCurMember(member);
 }

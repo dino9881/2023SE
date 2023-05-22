@@ -19,19 +19,29 @@ RegisterForm    CompanyMember::getMemberDetail()
     return registerForm;
 }
 
+string CompanyMember::getCompanyName()
+{
+    return _companyName;
+}
+
+string CompanyMember::getBusinessNumber()
+{
+    return _businessNumber;
+}
+
 unsigned int    CompanyMember::totalApplicantsNum()
 {
     return (0);
 }
 
-void            CompanyMember::addNewRecruitInfo()
+void            CompanyMember::addNewRecruitInfo(RecruitInfo* recruitInfo)
 {
-
+    _ownedRecuitInfos.push_back(recruitInfo);
 }
 
-void            CompanyMember::listRecruitInfo()
+vector<RecruitInfo*>             CompanyMember::listRecruitInfo()
 {
-
+    return _ownedRecuitInfos;
 }
 
 void	CompanyMember::checkInfo()

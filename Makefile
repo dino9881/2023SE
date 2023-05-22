@@ -20,6 +20,10 @@ SRCS = main.cpp \
 		Login.cpp \
 		LogoutUI.cpp \
 		Logout.cpp \
+		RegisterRecruitInfo.cpp \
+		RegisterRecruitInfoUI.cpp \
+		GetRecruitInfoList.cpp \
+		GetRecruitInfoListUI.cpp
 
 all: ${NAME}
 
