@@ -12,7 +12,7 @@ private:
     
     
 public:
-    ApplyInfo    getApplyInfoDetail();
+    ApplyInfoDetail    getApplyInfoDetail();
     void    setApplyNum();
     ApplyInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~ApplyInfo();

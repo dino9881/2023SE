@@ -11,4 +11,6 @@ accounting 2 2023/05/26
 2.1. 로그인
 4.2. 채용지원
 hankook 3456 accounting
+4.3. 지원 정보 조회
+hankook 3456 accounting 2 2023/05/26 
 2.2. 로그아웃

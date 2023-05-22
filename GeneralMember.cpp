@@ -29,9 +29,9 @@ void            GeneralMember::cancelApplyInfo()
 
 }
 
-void            GeneralMember::listApplyInfo()
+vector<ApplyInfo*>            GeneralMember::listApplyInfo()
 {
-
+    return _ownedApplyInfo;
 }
 
 void            GeneralMember::createNewApplyInfo(RecruitInfoDetail recruitInfoDetail)

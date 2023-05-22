@@ -10,12 +10,12 @@ private:
     vector<ApplyInfo*>  _ownedApplyInfo;
     
 public:
-    unsigned int    totalApplyNum();
-    void            cancelApplyInfo();
-    void            listApplyInfo();
-    RegisterForm    getMemberDetail();
-    void            createNewApplyInfo(RecruitInfoDetail recruitInfoDetail);
-    virtual void	checkInfo();
+    unsigned int        totalApplyNum();
+    void                cancelApplyInfo();
+    vector<ApplyInfo*>  listApplyInfo();
+    RegisterForm        getMemberDetail();
+    void                createNewApplyInfo(RecruitInfoDetail recruitInfoDetail);
+    virtual void	    checkInfo();
     GeneralMember(string name, string residentNumber, string id, string pw);
     ~GeneralMember();
 };

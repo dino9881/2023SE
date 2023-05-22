@@ -59,6 +59,7 @@ void Server::doTask()
     RegisterRecruitInfo registerRecruitInfo;
     GetRecruitInfoList getRecruitInfoList;
     ApplyRecruitInfo applyRecruitInfo;
+    ShowApplyInfoList showApplyInfoList;
     int menu_level_1, menu_level_2;
     int is_program_exit;
 
@@ -129,6 +130,7 @@ void Server::doTask()
                     break;
                 case 3:
                     // cout <<"4.3. 지원 정보 조회" << endl;
+                    showApplyInfoList.run();
                     break;
                 case 4:
                     // cout <<"4.4. 지원 취소" << endl;
