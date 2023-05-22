@@ -1,5 +1,6 @@
 #include "RegisterMember.hpp"
-
+#include "GeneralMember.hpp"
+#include "CompanyMember.hpp"
 void    RegisterMemberUI::startInterface()
 {
     fprintf(_fout, "1.1. 회원가입\n");
@@ -17,6 +18,16 @@ RegisterForm    RegisterMemberUI::enterRegisterInfo()
     fscanf(_fin, "%d %s %s %s %s \n", &type, name, number, id, pw);
     RegisterForm registerForm = {type, string(name), string(number), string(id), string(pw)};
     return (registerForm);
+}
+void            RegisterMemberUI::showResult(Member *member)
+{
+    RegisterForm registerForm;
+
+    if (dynamic_cast<CompanyMember*>(member))
+        registerForm = dynamic_cast<CompanyMember*>(member)->getMemberDetail();
+    else if (dynamic_cast<GeneralMember*>(member))
+        registerForm = dynamic_cast<GeneralMember*>(member)->getMemberDetail();
+    fprintf(_fout, "%d %s %s %s %s \n", registerForm.type, registerForm.name.c_str(), registerForm.number.c_str(), registerForm.id.c_str(), registerForm.pw.c_str());
 }
 
 RegisterMemberUI::RegisterMemberUI() : BasicUI() {}

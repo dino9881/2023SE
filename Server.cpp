@@ -40,6 +40,12 @@ FILE* Server::getFout()
     return this->_fout;
 }
 
+Member*         Server::registerMember(Member* member)
+{
+    _memberList.push_back(member);
+    return member;
+}
+
 vector<Member*> &Server::getMemberList()
 {
     return this->_memberList;

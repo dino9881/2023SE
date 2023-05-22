@@ -23,6 +23,7 @@ public:
     FILE*           getFout();
     Member*         getCurMember();
     void            setCurMember(Member* member);
+    Member*         registerMember(Member* member);
     vector<Member*> &getMemberList();
     void            doTask();
 };

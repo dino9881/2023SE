@@ -3,7 +3,7 @@
 
 class Member
 {
-private:
+protected:
     string          _id;
     string          _pw;
     int				_state;

@@ -7,6 +7,18 @@ CompanyMember::CompanyMember(string companyName, string businessNumber,string id
 
 CompanyMember::~CompanyMember(){}
 
+RegisterForm    CompanyMember::getMemberDetail()
+{
+    RegisterForm registerForm;
+
+    registerForm.type = 1;
+    registerForm.id = _id;
+    registerForm.pw = _pw;
+    registerForm.name = _companyName;
+    registerForm.number = _businessNumber;
+    return registerForm;
+}
+
 unsigned int    CompanyMember::totalApplicantsNum()
 {
     return (0);

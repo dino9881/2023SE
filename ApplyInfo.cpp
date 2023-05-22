@@ -5,7 +5,7 @@ ApplyInfo::ApplyInfo(string companyName, string task, string deadline, unsigned 
     cout << "지원 정보 생성 : " << companyName << " " << task << " " << numOfPersonnel << " " << deadline << endl ;
 }
 
-void ApplyInfo::getApplyInfoDetail()
+ApplyInfo ApplyInfo::getApplyInfoDetail()
 {
     //구현
 }

@@ -22,10 +22,20 @@ using namespace std;
 typedef struct _RecruitInfoDetail
 {
     string companyName;
+    string businessNumber;
     string task;
     string deadline;
     unsigned int numOfPersonnel;
 } RecruitInfoDetail;
+
+typedef struct _ApplyInfoDetail
+{
+    string companyName;
+    string businessNumber;
+    string task;
+    string deadline;
+    unsigned int numOfPersonnel;
+} ApplyInfoDetail;
 
 typedef struct _RegisterForm
 {

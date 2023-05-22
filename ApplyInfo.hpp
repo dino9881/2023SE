@@ -11,7 +11,7 @@ private:
     
     
 public:
-    void    getApplyInfoDetail();
+    ApplyInfo    getApplyInfoDetail();
     void    setApplyNum();
     ApplyInfo(string companyName, string task, string deadline, unsigned int numOfPersonnel);
     ~ApplyInfo();

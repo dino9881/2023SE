@@ -7,12 +7,13 @@ class GeneralMember : public Member
 private:
     string      _name;
     string      _residentNumber;
-    ApplyInfo*  _ownedApplyInfo[MAX_APPLY_NUM];
+    vector<ApplyInfo*>  _ownedApplyInfo;
     
 public:
     unsigned int    totalApplyNum();
     void            cancelApplyInfo();
     void            listApplyInfo();
+    RegisterForm    getMemberDetail();
     void            createNewApplyInfo();
     virtual void	checkInfo();
     GeneralMember(string name, string residentNumber, string id, string pw);

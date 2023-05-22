@@ -7,6 +7,18 @@ GeneralMember::GeneralMember(string name, string residentNumber,string id, strin
 
 GeneralMember::~GeneralMember(){}
 
+RegisterForm    GeneralMember::getMemberDetail()
+{
+    RegisterForm registerForm;
+
+    registerForm.type = 2;
+    registerForm.id = _id;
+    registerForm.pw = _pw;
+    registerForm.name = _name;
+    registerForm.number = _residentNumber;
+    return registerForm;
+}
+
 unsigned int    GeneralMember::totalApplyNum()
 {
     return 0;

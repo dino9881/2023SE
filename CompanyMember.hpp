@@ -7,13 +7,14 @@ class CompanyMember : public Member
 private:
     string          _companyName;
     string          _businessNumber;
-    RecruitInfo*    _ownedRecuitInfo;
+    vector<RecruitInfo*>    _ownedRecuitInfos;
 
     
 public:
     unsigned int    totalApplicantsNum();
     void            addNewRecruitInfo();
     void            listRecruitInfo();
+    RegisterForm    getMemberDetail();
     virtual void	checkInfo();
     CompanyMember(string name, string residentNumber,string id, string pw);
     ~CompanyMember();
