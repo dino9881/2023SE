@@ -14,7 +14,7 @@ public:
     void            cancelApplyInfo();
     void            listApplyInfo();
     RegisterForm    getMemberDetail();
-    void            createNewApplyInfo();
+    void            createNewApplyInfo(RecruitInfoDetail recruitInfoDetail);
     virtual void	checkInfo();
     GeneralMember(string name, string residentNumber, string id, string pw);
     ~GeneralMember();

@@ -34,8 +34,12 @@ void            GeneralMember::listApplyInfo()
 
 }
 
-void            GeneralMember::createNewApplyInfo()
+void            GeneralMember::createNewApplyInfo(RecruitInfoDetail recruitInfoDetail)
 {
+    ApplyInfo* applyInfo = NULL;
+    applyInfo = new ApplyInfo(recruitInfoDetail.companyName, recruitInfoDetail.businessNumber, \
+    recruitInfoDetail.task, recruitInfoDetail.deadline, recruitInfoDetail.numOfPersonnel);
+    _ownedApplyInfo.push_back(applyInfo);
 
 }
 

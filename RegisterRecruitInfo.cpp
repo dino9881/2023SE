@@ -10,7 +10,7 @@ RecruitInfo* RegisterRecruitInfo::addNewRecruitInfo(RecruitInfoDetail recruitInf
     CompanyMember* member = dynamic_cast<CompanyMember*>(server->getCurMember());
     RecruitInfo* info = NULL;
 
-    info = new RecruitInfo(recruitInfo.companyName, recruitInfo.task, recruitInfo.deadline, recruitInfo.numOfPersonnel);
+    info = new RecruitInfo(recruitInfo.companyName, recruitInfo.businessNumber, recruitInfo.task, recruitInfo.deadline, recruitInfo.numOfPersonnel);
     member->addNewRecruitInfo(info);
     return info;
 }

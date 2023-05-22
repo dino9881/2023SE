@@ -5,6 +5,7 @@ class ApplyInfo
 {
 private:
     string          _companyName;
+    string          _businessNumber;
     string          _task;
     string          _deadline;
     unsigned int    _numOfPersonnel;
@@ -13,6 +14,6 @@ private:
 public:
     ApplyInfo    getApplyInfoDetail();
     void    setApplyNum();
-    ApplyInfo(string companyName, string task, string deadline, unsigned int numOfPersonnel);
+    ApplyInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~ApplyInfo();
 };

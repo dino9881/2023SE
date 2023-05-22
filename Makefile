@@ -23,7 +23,9 @@ SRCS = main.cpp \
 		RegisterRecruitInfo.cpp \
 		RegisterRecruitInfoUI.cpp \
 		GetRecruitInfoList.cpp \
-		GetRecruitInfoListUI.cpp
+		GetRecruitInfoListUI.cpp \
+		ApplyRecruitInfo.cpp \
+		ApplyRecruitInfoUI.cpp \
 
 all: ${NAME}
 
