@@ -18,5 +18,5 @@ hankook 3456 accounting
 hankook 3456 accounting 2 2023/05/26 
 4.4. 지원취소
 hankook 3456 accounting
-2.2. 로그아웃
-hn
+1.2. 회원탈퇴
+> hn

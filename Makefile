@@ -30,6 +30,9 @@ SRCS = main.cpp \
 		ShowApplyInfoListUI.cpp \
 		CancelApplyUI.cpp \
 		CancelApply.cpp \
+		WithdrawlMember.cpp \
+		WithdrawlMemberUI.cpp \
+
 
 all: ${NAME}
 

@@ -45,6 +45,23 @@ Member*         Server::registerMember(Member* member)
     _memberList.push_back(member);
     return member;
 }
+string          Server::withdrawlMember(Member* member)
+{
+    string id;
+
+    id = member->getId();
+    for (int i = 0 ; i < _memberList.size(); i++)
+    {
+        if (member == _memberList[i])
+        {
+            id = _memberList[i]->getId();
+            _memberList.erase(_memberList.begin() + i);
+            break;
+        }
+    }
+    return id;
+}
+
 
 vector<Member*> &Server::getMemberList()
 {
@@ -61,6 +78,7 @@ void Server::doTask()
     ApplyRecruitInfo applyRecruitInfo;
     ShowApplyInfoList showApplyInfoList;
     CancelApply cancelApply;
+    WithdrawlMember withdrawlMember;
     int menu_level_1, menu_level_2;
     int is_program_exit;
 
@@ -81,6 +99,7 @@ void Server::doTask()
                     break;
                 case 2:
                     // cout << "1.2. 회원탈퇴" << endl;
+                    withdrawlMember.run();
                     break;
                 default:
                     is_program_exit = 1;

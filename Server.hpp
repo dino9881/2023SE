@@ -7,6 +7,7 @@
 #include "ApplyRecruitInfo.hpp"
 #include "ShowApplyInfoList.hpp"
 #include "CancelApply.hpp"
+#include "WithdrawlMember.hpp"
 
 // 프로그램의 정보를 담고있는 Server class => 싱글톤 패턴으로 구현함 
 class Server
@@ -28,6 +29,7 @@ public:
     FILE*           getFout();
     Member*         getCurMember();
     void            setCurMember(Member* member);
+    string          withdrawlMember(Member* member);
     Member*         registerMember(Member* member);
     vector<Member*> &getMemberList();
     void            doTask();
