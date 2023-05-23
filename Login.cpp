@@ -37,6 +37,6 @@ void Login::run()
         cout << "로그인 실패 "<< endl;
         return;
     }
-    cout << "로그인 성공 id = " << member->getId() << " pw = " << member->getPw() << endl;
     server->setCurMember(member);
+    _loginUI.showResult(member);
 }

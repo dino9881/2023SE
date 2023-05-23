@@ -19,3 +19,8 @@ LoginForm   LoginUI::requestLogIn()
     LoginForm loginForm{string(id), string(pw)};
     return (loginForm);
 }
+
+void        LoginUI::showResult(Member *member)
+{
+    fprintf(_fout, "%s %s\n", member->getId().c_str(), member->getPw().c_str());
+}

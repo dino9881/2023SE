@@ -1,5 +1,6 @@
 #pragma once
 #include "BasicUI.hpp"
+#include "Member.hpp"
 
 class LoginUI : public BasicUI
 {
@@ -9,5 +10,7 @@ public:
     ~LoginUI();
     void        startInterface();
     LoginForm   requestLogIn();
+    void        showResult(Member *member);
+
 };
 

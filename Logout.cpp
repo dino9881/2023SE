@@ -7,6 +7,12 @@ Logout::~Logout(){}
 void Logout::run()
 {
     Server* server = Server::getInstance();
+    Member *member = NULL;
     _logoutUI.startInterface();
-    server->setCurMember(NULL);
+    member = server->getCurMember();
+    if (member)
+    {
+        _logoutUI.showResult(member->getId());
+        server->setCurMember(NULL);
+    }
 }
