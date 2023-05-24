@@ -1,3 +1,5 @@
+프로그램 시작 
+
 1.1. 회원가입
 > 1 hankook 3456 hk pwd1
 
@@ -5,18 +7,28 @@
 > hk pwd1
 
 3.1. 채용 정보 등록 
-> accounting 2 2023/03/01
-
-3.1. 채용 정보 등록 
-> eng 5 2023/05/31
+> accounting 2 2023/05/26
 
 3.2 등록된 채용 정보 조회 
-> accounting 2 2023/03/01
-
-> eng 5 2023/05/31
+> accounting 2 2023/05/26
 
 2.2. 로그아웃
 > hk
+
+1.1. 회원가입
+> 1 hankook2 34562 hk2 pwd12
+
+2.1. 로그인
+> hk2 pwd12
+
+3.1. 채용 정보 등록 
+> eng 2 2023/05/26
+
+3.2 등록된 채용 정보 조회 
+> eng 2 2023/05/26
+
+2.2. 로그아웃
+> hk2
 
 1.1. 회원가입
 > 2 hong 98765 hn pwd2
@@ -24,17 +36,23 @@
 2.1. 로그인
 > hn pwd2
 
-4.1. 채용 정보 검색
-hankook 3456 eng 5 2023/05/31
-hankook 3456 accounting 2 2023/03/01
 4.2. 채용지원
-> hankook 3456 eng
+> hankook 3456 accounting
+
+4.2. 채용지원
+> hankook2 34562 eng
 
 4.3. 지원 정보 조회
-> hankook 3456 eng 5 2023/05/31 
+> hankook 3456 accounting 2 2023/05/26 
+> hankook2 34562 eng 2 2023/05/26 
+
+4.4. 지원취소
+> hankook 3456 accounting
 
 5.1. 지원 정보 통계
-> { [eng] [1] }
+> eng 1
+
 2.2. 로그아웃
 > hn
 
+6.1 프로그램 종료 

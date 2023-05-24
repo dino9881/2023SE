@@ -88,10 +88,10 @@ void Server::doTask()
     menu_level_1 = 0;
     menu_level_2 = 0; 
     is_program_exit = 0;
+    fprintf(_fout, "프로그램 시작 \n");
     while (! is_program_exit)
     {
         fscanf(_fin, "%d %d \n", &menu_level_1, &menu_level_2);
-        cout << menu_level_1 << " " << menu_level_2 << endl;
         switch (menu_level_1)
         {
         case 1:
@@ -101,7 +101,6 @@ void Server::doTask()
                     registerMember.run();
                     break;
                 case 2:
-                    // cout << "1.2. 회원탈퇴" << endl;
                     withdrawlMember.run();
                     break;
                 default:
@@ -113,11 +112,9 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    // cout << "2.1. 로그인" << endl;
                     login.run();
                     break;
                 case 2:
-                    // cout << "2.2. 로그아웃" << endl;
                     logout.run();
                     break;
                 default:
@@ -129,11 +126,9 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    // cout <<"3.1. 채용 정보 등록" << endl;
                     registerRecruitInfo.run();
                     break;
                 case 2:
-                    // cout <<"3.2. 등록된 채용 정보 조회" << endl;
                     getRecruitInfoList.run();
                     break;
                 default:
@@ -148,15 +143,12 @@ void Server::doTask()
                     searchRecruitInfo.run();
                     break;
                 case 2:
-                    // cout <<"4.2. 채용 지원" << endl;
                     applyRecruitInfo.run();
                     break;
                 case 3:
-                    // cout <<"4.3. 지원 정보 조회" << endl;
                     showApplyInfoList.run();
                     break;
                 case 4:
-                    // cout <<"4.4. 지원 취소" << endl;
                     cancelApply.run();
                     break;
                 default:
@@ -168,7 +160,6 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    // cout <<"5.1. 지원 정보 통계" << endl;
                     showApplyStatistics.run();
                     break;
                 default:
@@ -180,7 +171,6 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    // cout <<"6.1. 종료" << endl;
                     is_program_exit = 1;
                     break;
                 default:
@@ -194,4 +184,5 @@ void Server::doTask()
             break;
         }
     }
+    fprintf(_fout, "\n6.1 프로그램 종료 \n");
 }

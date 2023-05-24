@@ -7,7 +7,7 @@ WithdrawlMemberUI::~WithdrawlMemberUI() {}
 
 void   WithdrawlMemberUI::startInterface()
 {
-    fprintf(_fout, "1.2. 회원탈퇴\n");
+    fprintf(_fout, "\n1.2. 회원탈퇴\n");
 }
 
 void WithdrawlMemberUI::showResult(string id)

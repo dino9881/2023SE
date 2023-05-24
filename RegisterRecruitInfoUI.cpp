@@ -7,7 +7,7 @@
 // interface 시작
 void    RegisterRecruitInfoUI::startInterface()
 {
-    fprintf(_fout, "3.1. 채용 정보 등록 \n");
+    fprintf(_fout, "\n3.1. 채용 정보 등록 \n");
 }
 
 // ComapanyMember에게 정보를 입력받아 controller에 전달.
@@ -32,7 +32,7 @@ RecruitInfoDetail    RegisterRecruitInfoUI::registerNewRecruit()
 
 void    RegisterRecruitInfoUI::showResult(RecruitInfoDetail recruitInfo)
 {
-    fprintf(_fout, "> %s %u %s\n\n", recruitInfo.task.c_str(), recruitInfo.numOfPersonnel, recruitInfo.deadline.c_str());
+    fprintf(_fout, "> %s %u %s\n", recruitInfo.task.c_str(), recruitInfo.numOfPersonnel, recruitInfo.deadline.c_str());
 }
 
 RegisterRecruitInfoUI::RegisterRecruitInfoUI() : BasicUI() {}

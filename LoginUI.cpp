@@ -6,7 +6,7 @@ LoginUI::~LoginUI(){}
 
 void    LoginUI::startInterface()
 {
-    fprintf(_fout, "2.1. 로그인\n");
+    fprintf(_fout, "\n2.1. 로그인\n");
 }
 
 // id 와 pw 를 입력받아 loginForm 구조체를 만들어 반환하여 해당 Form 으로 login 을 요청한다.
@@ -22,5 +22,5 @@ LoginForm   LoginUI::requestLogIn()
 
 void        LoginUI::showResult(Member *member)
 {
-    fprintf(_fout, "> %s %s\n\n", member->getId().c_str(), member->getPw().c_str());
+    fprintf(_fout, "> %s %s\n", member->getId().c_str(), member->getPw().c_str());
 }
