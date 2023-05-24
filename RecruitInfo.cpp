@@ -17,6 +17,11 @@ RecruitInfoDetail    RecruitInfo::getRecruitInfoDetail()
     return (detail);
 }
 
+unsigned int       RecruitInfo::getNumOfApplicants()
+{
+    return _numOfApplicants;
+}
+
 void    RecruitInfo::setApplyNum()
 {
 }

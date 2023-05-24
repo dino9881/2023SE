@@ -32,6 +32,8 @@ SRCS = main.cpp \
 		CancelApply.cpp \
 		WithdrawlMember.cpp \
 		WithdrawlMemberUI.cpp \
+		ShowApplyStatistics.cpp\
+		ShowApplyStatisticsUI.cpp\
 
 
 all: ${NAME}

@@ -38,6 +38,12 @@ typedef struct _ApplyInfoDetail
     unsigned int numOfPersonnel;
 } ApplyInfoDetail;
 
+typedef struct _StatisticsDetail
+{
+    string task;
+    unsigned int count;
+} StatisticsDetail;
+
 typedef struct _RegisterForm
 {
     int type;

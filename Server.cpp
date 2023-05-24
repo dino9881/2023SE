@@ -79,6 +79,8 @@ void Server::doTask()
     ShowApplyInfoList showApplyInfoList;
     CancelApply cancelApply;
     WithdrawlMember withdrawlMember;
+    ShowApplyStatistics showApplyStatistics;
+
     int menu_level_1, menu_level_2;
     int is_program_exit;
 
@@ -142,7 +144,6 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
-                    // cout <<"4.1. 채용 정보 검색" << endl;
                     break;
                 case 2:
                     // cout <<"4.2. 채용 지원" << endl;
@@ -166,6 +167,7 @@ void Server::doTask()
             {
                 case 1:
                     // cout <<"5.1. 지원 정보 통계" << endl;
+                    showApplyStatistics.run();
                     break;
                 default:
                     is_program_exit = 1;

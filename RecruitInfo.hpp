@@ -13,6 +13,8 @@ private:
 
 public:
     RecruitInfoDetail   getRecruitInfoDetail();
+    unsigned int        getNumOfApplicants();
+
     void                setApplyNum();
     void                increaseApplyNum();
     bool operator < (RecruitInfo &recruitInfo);

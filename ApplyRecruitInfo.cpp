@@ -25,7 +25,8 @@ void ApplyRecruitInfo::run()
     
     _applyRecruitInfoUI.startInterface();
     toFindBusinessNumber = _applyRecruitInfoUI.applyRecruit();
-    for(int i = 0; i < memberList.size(); i++){
+    for(int i = 0; i < memberList.size(); i++)
+    {
         CompanyMember* companyMember = dynamic_cast<CompanyMember*>(memberList[i]);
         if (companyMember)
         {
