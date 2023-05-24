@@ -80,6 +80,7 @@ void Server::doTask()
     CancelApply cancelApply;
     WithdrawlMember withdrawlMember;
     ShowApplyStatistics showApplyStatistics;
+    SearchRecruitInfo searchRecruitInfo;
 
     int menu_level_1, menu_level_2;
     int is_program_exit;
@@ -144,6 +145,7 @@ void Server::doTask()
             switch (menu_level_2)
             {
                 case 1:
+                    searchRecruitInfo.run();
                     break;
                 case 2:
                     // cout <<"4.2. 채용 지원" << endl;

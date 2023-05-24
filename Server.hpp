@@ -9,6 +9,7 @@
 #include "CancelApply.hpp"
 #include "WithdrawlMember.hpp"
 #include "ShowApplyStatistics.hpp"
+#include "SearchRecruitInfo.hpp"
 
 // 프로그램의 정보를 담고있는 Server class => 싱글톤 패턴으로 구현함 
 class Server
