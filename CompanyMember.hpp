@@ -13,12 +13,10 @@ private:
 public:
     unsigned int    totalApplicantsNum();
     void            addNewRecruitInfo(RecruitInfo* recruitInfo);
-    string getCompanyName();
-    string getBusinessNumber();
-    
+    string          getCompanyName();
+    string          getBusinessNumber();
     vector<RecruitInfo*>          listRecruitInfo();
     RegisterForm    getMemberDetail();
-    virtual void	checkInfo();
     CompanyMember(string name, string residentNumber,string id, string pw);
     ~CompanyMember();
 };

@@ -9,12 +9,9 @@ protected:
     int				_state;
 
 public:
-    bool            checkValid();
-	int		        changeAccessState();
     string          getId();
     string          getPw();
-	virtual void	checkInfo() = 0;
     Member(string id, string pw);
-    ~Member();
+    virtual ~Member();
 };
 

@@ -13,5 +13,4 @@ void   WithdrawlMemberUI::startInterface()
 void WithdrawlMemberUI::showResult(string id)
 {
     fprintf(_fout, "> %s\n", id.c_str());
-
 }

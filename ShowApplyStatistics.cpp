@@ -44,7 +44,7 @@ vector<pair<string, unsigned int>> ShowApplyStatistics::getCompanyMemberStatisti
             // 해당 업무정보에 대한 통계가 이미 있다면
             if (list->getRecruitInfoDetail().task == statisticList[i].first)
             {
-                // 통계 1 증가
+                // 통계 지원자 수만큼 증가
                 statisticList[i].second += list->getNumOfApplicants();
                 break;
             }

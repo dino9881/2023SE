@@ -15,7 +15,6 @@ public:
     vector<ApplyInfo*>  listApplyInfo();
     RegisterForm        getMemberDetail();
     void                createNewApplyInfo(RecruitInfoDetail recruitInfoDetail);
-    virtual void	    checkInfo();
     GeneralMember(string name, string residentNumber, string id, string pw);
     ~GeneralMember();
 };
