@@ -13,6 +13,7 @@ private:
 public:
     unsigned int    totalApplicantsNum();
     void            addNewRecruitInfo(RecruitInfo* recruitInfo);
+    void            decreaseApplyNum();
     string          getCompanyName();
     string          getBusinessNumber();
     vector<RecruitInfo*>          listRecruitInfo();

@@ -34,6 +34,12 @@ unsigned int    CompanyMember::totalApplicantsNum()
     return (0);
 }
 
+void            CompanyMember::decreaseApplyNum()
+{
+    _ownedRecuitInfos.back()->decreaseApplyNum();
+}
+
+
 void            CompanyMember::addNewRecruitInfo(RecruitInfo* recruitInfo)
 {
     _ownedRecuitInfos.push_back(recruitInfo);
@@ -42,10 +48,5 @@ void            CompanyMember::addNewRecruitInfo(RecruitInfo* recruitInfo)
 vector<RecruitInfo*>             CompanyMember::listRecruitInfo()
 {
     return _ownedRecuitInfos;
-}
-
-void	CompanyMember::checkInfo()
-{
-
 }
 

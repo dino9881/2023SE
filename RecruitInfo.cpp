@@ -35,3 +35,9 @@ void   RecruitInfo::increaseApplyNum()
 {
     _numOfApplicants++;
 }
+
+void   RecruitInfo::decreaseApplyNum()
+{
+    _numOfApplicants--;
+    cout << _numOfApplicants << endl;
+}

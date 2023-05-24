@@ -17,6 +17,8 @@ public:
 
     void                setApplyNum();
     void                increaseApplyNum();
+    void                decreaseApplyNum();
+
     bool operator < (RecruitInfo &recruitInfo);
     RecruitInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~RecruitInfo();

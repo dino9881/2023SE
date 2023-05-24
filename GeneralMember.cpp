@@ -52,8 +52,3 @@ void            GeneralMember::createNewApplyInfo(RecruitInfoDetail recruitInfoD
     _ownedApplyInfo.push_back(applyInfo);
 
 }
-
-void	GeneralMember::checkInfo()
-{
-    
-}
