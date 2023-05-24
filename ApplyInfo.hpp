@@ -11,10 +11,9 @@ private:
     unsigned int    _numOfPersonnel;
     
 public:
-    ApplyInfoDetail    getApplyInfoDetail();
-    string  getBusinessNumber();
-    void    setApplyNum();
-    bool            operator < (ApplyInfo &applyInfo);
+    ApplyInfoDetail     getApplyInfoDetail();
+    string              getBusinessNumber();
+    bool                operator < (ApplyInfo &applyInfo);
     ApplyInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~ApplyInfo();
 };

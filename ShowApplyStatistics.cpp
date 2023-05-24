@@ -59,7 +59,7 @@ vector<pair<string, unsigned int>> ShowApplyStatistics::getCompanyMemberStatisti
 void ShowApplyStatistics::run()
 {
     Server* server = Server::getInstance();
-    _ShowApplyStatisticsUI.startInterface();
+    _showApplyStatisticsUI.startInterface();
 
     Member* member = NULL;
     member = server->getCurMember();
@@ -74,7 +74,7 @@ void ShowApplyStatistics::run()
         {
             statisticsDetail.task = result[i].first;
             statisticsDetail.count = result[i].second;
-            _ShowApplyStatisticsUI.showResult(statisticsDetail);
+            _showApplyStatisticsUI.showResult(statisticsDetail);
         }
         
     }
@@ -85,7 +85,7 @@ void ShowApplyStatistics::run()
         {
             statisticsDetail.task = result[i].first;
             statisticsDetail.count = result[i].second;
-            _ShowApplyStatisticsUI.showResult(statisticsDetail);
+            _showApplyStatisticsUI.showResult(statisticsDetail);
         }
     }
 }

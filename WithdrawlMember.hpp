@@ -10,5 +10,5 @@ public:
     WithdrawlMember();
     ~WithdrawlMember();
     void    run();
-    string    deleteMember(Member* member);
+    string  deleteMember(Member* member);
 };

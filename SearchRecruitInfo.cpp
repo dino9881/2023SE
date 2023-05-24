@@ -11,7 +11,8 @@ void  SearchRecruitInfo::showCompanyRecruitInfo(vector<RecruitInfo*> RecruitInfo
 {   
     RecruitInfoDetail recruitInfoDetail;
 
-    for(int i = RecruitInfos.size()-1; i >= 0; i--){
+    for(int i = RecruitInfos.size() - 1; i >= 0; i--)
+    {
         recruitInfoDetail = RecruitInfos[i]->getRecruitInfoDetail();
         _searchRecruitInfoUI.showResult(recruitInfoDetail);
     }
@@ -27,7 +28,8 @@ void SearchRecruitInfo::run()
     
     _searchRecruitInfoUI.startInterface();
     companyName = _searchRecruitInfoUI.searchCompanyName();
-    for(int i = 0; i < memberList.size(); i++){
+    for(int i = 0; i < memberList.size(); i++)
+    {
         CompanyMember* companyMember = dynamic_cast<CompanyMember*>(memberList[i]);
         if (companyMember)
         {

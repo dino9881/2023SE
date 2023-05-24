@@ -26,8 +26,3 @@ string  ApplyInfo::getBusinessNumber()
 {
     return _businessNumber;
 }
-
-void ApplyInfo::setApplyNum()
-{
-    //구현
-}

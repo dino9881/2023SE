@@ -8,7 +8,7 @@ private:
 public:
     SearchRecruitInfoUI();
     ~SearchRecruitInfoUI();
-    void  startInterface();
-    string searchCompanyName();
-    void showResult(RecruitInfoDetail recruitInfoDetail);
+    void    startInterface();
+    string  searchCompanyName();
+    void    showResult(RecruitInfoDetail recruitInfoDetail);
 };

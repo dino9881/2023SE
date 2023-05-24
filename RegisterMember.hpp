@@ -11,9 +11,9 @@ private:
     RegisterMemberUI    _registerMemberUI;
 public:
     Member* createNewMember(RegisterForm registerForm);
+    void    run();
     RegisterMember();
     ~RegisterMember();
-    void run();
 
 };
 

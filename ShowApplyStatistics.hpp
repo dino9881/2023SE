@@ -7,9 +7,9 @@
 class ShowApplyStatistics : public BasicController
 {
 private:
-    ShowApplyStatisticsUI    _ShowApplyStatisticsUI;
-    vector<pair<string, unsigned int>> getGeneralMemberStatistics(GeneralMember* member);
-    vector<pair<string, unsigned int>> getCompanyMemberStatistics(CompanyMember* member);
+    ShowApplyStatisticsUI               _showApplyStatisticsUI;
+    vector<pair<string, unsigned int>>  getGeneralMemberStatistics(GeneralMember* member);
+    vector<pair<string, unsigned int>>  getCompanyMemberStatistics(CompanyMember* member);
 public:
     ShowApplyStatistics();
     ~ShowApplyStatistics();

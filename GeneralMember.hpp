@@ -5,8 +5,8 @@
 class GeneralMember : public Member
 {
 private:
-    string      _name;
-    string      _residentNumber;
+    string              _name;
+    string              _residentNumber;
     vector<ApplyInfo*>  _ownedApplyInfo;
     
 public:

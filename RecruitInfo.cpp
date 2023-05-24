@@ -22,10 +22,6 @@ unsigned int       RecruitInfo::getNumOfApplicants()
     return _numOfApplicants;
 }
 
-void    RecruitInfo::setApplyNum()
-{
-}
-
 bool RecruitInfo::operator < (RecruitInfo &recruitInfo)
 {
     return _companyName < recruitInfo._companyName;

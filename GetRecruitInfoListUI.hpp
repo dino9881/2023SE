@@ -10,6 +10,6 @@ public:
     GetRecruitInfoListUI();
     ~GetRecruitInfoListUI();
     void        startInterface();
-    void    showResult(RecruitInfoDetail recruitInfo);
+    void        showResult(RecruitInfoDetail recruitInfo);
 };
 

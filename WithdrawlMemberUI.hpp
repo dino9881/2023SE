@@ -8,7 +8,7 @@ private:
 public:
     WithdrawlMemberUI();
     ~WithdrawlMemberUI();
-    void  startInterface();
-    void withdrawl();
-    void showResult(string id);
+    void    startInterface();
+    void    withdrawl();
+    void    showResult(string id);
 };

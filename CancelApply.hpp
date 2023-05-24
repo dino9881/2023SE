@@ -6,7 +6,7 @@
 class CancelApply : public BasicController 
 {
 private:
-    CancelApplyUI _cancelApplyUI;
+    CancelApplyUI   _cancelApplyUI;
 public:
     ApplyInfoDetail cancelApplyInfo(GeneralMember* member, string businessNumber);
     // 채용 정보의 지원자 수를 줄여주는 함수

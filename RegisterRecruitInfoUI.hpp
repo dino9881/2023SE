@@ -9,8 +9,8 @@ private:
 public:
     RegisterRecruitInfoUI();
     ~RegisterRecruitInfoUI();
-    void        startInterface();
     RecruitInfoDetail   registerNewRecruit();
-    void    showResult(RecruitInfoDetail recruitInfo);
+    void                startInterface();
+    void                showResult(RecruitInfoDetail recruitInfo);
 };
 

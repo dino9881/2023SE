@@ -9,6 +9,5 @@ public:
     ~LogoutUI();
     void        startInterface();
     void        showResult(string id);
-    // void        requestLogOut();
 };
 

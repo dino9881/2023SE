@@ -9,6 +9,6 @@ private:
 public:
     ShowApplyInfoListUI();
     ~ShowApplyInfoListUI();
-    void  startInterface();
-    void showResult(ApplyInfoDetail applyInfoDetail);
+    void    startInterface();
+    void    showResult(ApplyInfoDetail applyInfoDetail);
 };

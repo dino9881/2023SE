@@ -7,7 +7,7 @@ private:
 public:
     CancelApplyUI();
     ~CancelApplyUI();
-    void  startInterface();
-    string cancelApply();
-    void showResult(ApplyInfoDetail applyInfoDetail);
+    void    startInterface();
+    string  cancelApply();
+    void    showResult(ApplyInfoDetail applyInfoDetail);
 };

@@ -14,12 +14,9 @@ private:
 public:
     RecruitInfoDetail   getRecruitInfoDetail();
     unsigned int        getNumOfApplicants();
-
-    void                setApplyNum();
     void                increaseApplyNum();
     void                decreaseApplyNum();
-
-    bool operator < (RecruitInfo &recruitInfo);
+    bool                operator < (RecruitInfo &recruitInfo);
     RecruitInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~RecruitInfo();
 };
