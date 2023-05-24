@@ -16,7 +16,7 @@ string  ApplyRecruitInfoUI::applyRecruit()
 
 // 지원 정보를 출력해준다.
 void ApplyRecruitInfoUI::showResult(RecruitInfoDetail recruitInfoDetail){
-    fprintf(_fout, "%s %s %s\n",recruitInfoDetail.companyName.c_str(), recruitInfoDetail.businessNumber.c_str(), recruitInfoDetail.task.c_str());
+    fprintf(_fout, "> %s %s %s\n\n",recruitInfoDetail.companyName.c_str(), recruitInfoDetail.businessNumber.c_str(), recruitInfoDetail.task.c_str());
 }
 
 ApplyRecruitInfoUI::ApplyRecruitInfoUI() : BasicUI() {}

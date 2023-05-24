@@ -10,7 +10,7 @@ void   GetRecruitInfoListUI::startInterface()
 // vertor를 iter를 통해 순회하며 showResult하는 로직으로 재구현 필요해보임.
 void    GetRecruitInfoListUI::showResult(RecruitInfoDetail recruitInfo)
 {     
-    fprintf(_fout, "%s %u %s\n",recruitInfo.task.c_str(), recruitInfo.numOfPersonnel, recruitInfo.deadline.c_str());
+    fprintf(_fout, "> %s %u %s\n\n",recruitInfo.task.c_str(), recruitInfo.numOfPersonnel, recruitInfo.deadline.c_str());
 }
 
 GetRecruitInfoListUI::GetRecruitInfoListUI() {}

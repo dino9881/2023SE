@@ -22,5 +22,5 @@ LoginForm   LoginUI::requestLogIn()
 
 void        LoginUI::showResult(Member *member)
 {
-    fprintf(_fout, "%s %s\n", member->getId().c_str(), member->getPw().c_str());
+    fprintf(_fout, "> %s %s\n\n", member->getId().c_str(), member->getPw().c_str());
 }

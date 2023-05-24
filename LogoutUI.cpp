@@ -11,5 +11,5 @@ void    LogoutUI::startInterface()
 
 void         LogoutUI::showResult(string id)
 {
-    fprintf(_fout, "%s\n", id.c_str());
+    fprintf(_fout, "> %s\n\n", id.c_str());
 }

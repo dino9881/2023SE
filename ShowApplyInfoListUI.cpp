@@ -14,5 +14,5 @@ void    ShowApplyInfoListUI::startInterface()
 
 void ShowApplyInfoListUI::showResult(ApplyInfoDetail applyInfoDetail)
 {   
-    fprintf(_fout, "%s %s %s %u %s \n", applyInfoDetail.companyName.c_str(), applyInfoDetail.businessNumber.c_str(), applyInfoDetail.task.c_str(), applyInfoDetail.numOfPersonnel, applyInfoDetail.deadline.c_str());
+    fprintf(_fout, "> %s %s %s %u %s \n\n", applyInfoDetail.companyName.c_str(), applyInfoDetail.businessNumber.c_str(), applyInfoDetail.task.c_str(), applyInfoDetail.numOfPersonnel, applyInfoDetail.deadline.c_str());
 }

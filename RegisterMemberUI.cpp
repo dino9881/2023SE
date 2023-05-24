@@ -27,7 +27,7 @@ void            RegisterMemberUI::showResult(Member *member)
         registerForm = dynamic_cast<CompanyMember*>(member)->getMemberDetail();
     else if (dynamic_cast<GeneralMember*>(member))
         registerForm = dynamic_cast<GeneralMember*>(member)->getMemberDetail();
-    fprintf(_fout, "%d %s %s %s %s \n", registerForm.type, registerForm.name.c_str(), registerForm.number.c_str(), registerForm.id.c_str(), registerForm.pw.c_str());
+    fprintf(_fout, "> %d %s %s %s %s\n\n", registerForm.type, registerForm.name.c_str(), registerForm.number.c_str(), registerForm.id.c_str(), registerForm.pw.c_str());
 }
 
 RegisterMemberUI::RegisterMemberUI() : BasicUI() {}

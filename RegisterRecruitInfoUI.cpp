@@ -32,7 +32,7 @@ RecruitInfoDetail    RegisterRecruitInfoUI::registerNewRecruit()
 
 void    RegisterRecruitInfoUI::showResult(RecruitInfoDetail recruitInfo)
 {
-    fprintf(_fout, "%s %u %s\n", recruitInfo.task.c_str(), recruitInfo.numOfPersonnel, recruitInfo.deadline.c_str());
+    fprintf(_fout, "> %s %u %s\n\n", recruitInfo.task.c_str(), recruitInfo.numOfPersonnel, recruitInfo.deadline.c_str());
 }
 
 RegisterRecruitInfoUI::RegisterRecruitInfoUI() : BasicUI() {}

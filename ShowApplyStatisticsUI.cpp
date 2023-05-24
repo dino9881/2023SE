@@ -7,7 +7,7 @@ ShowApplyStatisticsUI::~ShowApplyStatisticsUI() {}
 
 void   ShowApplyStatisticsUI::startInterface()
 {
-    fprintf(_fout, "5.1. 지원 정보 통계\n");
+    fprintf(_fout, "5.1. 지원 정보 통계\n> ");
 }
 
 void ShowApplyStatisticsUI::showResult(StatisticsDetail statisticsDetail)
