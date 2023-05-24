@@ -17,6 +17,11 @@ ApplyInfoDetail ApplyInfo::getApplyInfoDetail()
     return (detail);
 }
 
+bool ApplyInfo::operator < (ApplyInfo &applyInfo)
+{
+    return _companyName < applyInfo._companyName;
+}
+
 string  ApplyInfo::getBusinessNumber()
 {
     return _businessNumber;

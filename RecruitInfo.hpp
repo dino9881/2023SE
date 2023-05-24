@@ -15,6 +15,7 @@ public:
     RecruitInfoDetail   getRecruitInfoDetail();
     void                setApplyNum();
     void                increaseApplyNum();
+    bool operator < (RecruitInfo &recruitInfo);
     RecruitInfo(string companyName, string businessNumber, string task, string deadline, unsigned int numOfPersonnel);
     ~RecruitInfo();
 };

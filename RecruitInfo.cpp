@@ -21,6 +21,11 @@ void    RecruitInfo::setApplyNum()
 {
 }
 
+bool RecruitInfo::operator < (RecruitInfo &recruitInfo)
+{
+    return _companyName < recruitInfo._companyName;
+}
+
 void   RecruitInfo::increaseApplyNum()
 {
     _numOfApplicants++;
